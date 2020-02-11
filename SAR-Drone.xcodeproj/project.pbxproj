@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B61B1E82408F3E9B5A8A24 /* Pods_SAR_Drone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6829B2DB8848D1778669B3 /* Pods_SAR_Drone.framework */; };
+		6363337023F362E600EB178C /* FFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6363336F23F362E600EB178C /* FFmpeg.framework */; };
 		6381EC1623F35392002C1DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381EC1523F35392002C1DD0 /* AppDelegate.swift */; };
 		6381EC1823F35392002C1DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381EC1723F35392002C1DD0 /* SceneDelegate.swift */; };
 		6381EC1A23F35392002C1DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381EC1923F35392002C1DD0 /* ViewController.swift */; };
 		6381EC1D23F35392002C1DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6381EC1B23F35392002C1DD0 /* Main.storyboard */; };
 		6381EC1F23F35397002C1DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6381EC1E23F35397002C1DD0 /* Assets.xcassets */; };
 		6381EC2223F35397002C1DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6381EC2023F35397002C1DD0 /* LaunchScreen.storyboard */; };
+		6381EC2A23F35689002C1DD0 /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381EC2923F35689002C1DD0 /* ProductCommunicationManager.swift */; };
+		6381EC2D23F35D9D002C1DD0 /* DJIWidget in Resources */ = {isa = PBXBuildFile; fileRef = 6381EC2B23F35D9D002C1DD0 /* DJIWidget */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6363336F23F362E600EB178C /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFmpeg.framework; sourceTree = "<group>"; };
 		6381EC1223F35392002C1DD0 /* SAR-Drone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAR-Drone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6381EC1523F35392002C1DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6381EC1723F35392002C1DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		6381EC1E23F35397002C1DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6381EC2123F35397002C1DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6381EC2323F35397002C1DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6381EC2923F35689002C1DD0 /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
+		6381EC2B23F35D9D002C1DD0 /* DJIWidget */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DJIWidget; sourceTree = "<group>"; };
+		BDF8DBEBB4C36DD0BC0093DB /* Pods-SAR-Drone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAR-Drone.release.xcconfig"; path = "Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone.release.xcconfig"; sourceTree = "<group>"; };
+		D3345BA6FD2808AFD34A1EE2 /* Pods-SAR-Drone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAR-Drone.debug.xcconfig"; path = "Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone.debug.xcconfig"; sourceTree = "<group>"; };
+		DE6829B2DB8848D1778669B3 /* Pods_SAR_Drone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAR_Drone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B61B1E82408F3E9B5A8A24 /* Pods_SAR_Drone.framework in Frameworks */,
+				6363337023F362E600EB178C /* FFmpeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE8CD550BA4687E76F12E11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6363336F23F362E600EB178C /* FFmpeg.framework */,
+				6381EC2B23F35D9D002C1DD0 /* DJIWidget */,
+				DE6829B2DB8848D1778669B3 /* Pods_SAR_Drone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6381EC0923F35392002C1DD0 = {
 			isa = PBXGroup;
 			children = (
 				6381EC1423F35392002C1DD0 /* SAR-Drone */,
 				6381EC1323F35392002C1DD0 /* Products */,
+				AD5642147895BB9747E6BBE9 /* Pods */,
+				0EE8CD550BA4687E76F12E11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,7 @@
 			children = (
 				6381EC1523F35392002C1DD0 /* AppDelegate.swift */,
 				6381EC1723F35392002C1DD0 /* SceneDelegate.swift */,
+				6381EC2923F35689002C1DD0 /* ProductCommunicationManager.swift */,
 				6381EC1923F35392002C1DD0 /* ViewController.swift */,
 				6381EC1B23F35392002C1DD0 /* Main.storyboard */,
 				6381EC1E23F35397002C1DD0 /* Assets.xcassets */,
@@ -67,6 +92,15 @@
 			path = "SAR-Drone";
 			sourceTree = "<group>";
 		};
+		AD5642147895BB9747E6BBE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3345BA6FD2808AFD34A1EE2 /* Pods-SAR-Drone.debug.xcconfig */,
+				BDF8DBEBB4C36DD0BC0093DB /* Pods-SAR-Drone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6381EC2623F35397002C1DD0 /* Build configuration list for PBXNativeTarget "SAR-Drone" */;
 			buildPhases = (
+				40707BE97233AA27DD1E7C43 /* [CP] Check Pods Manifest.lock */,
 				6381EC0E23F35392002C1DD0 /* Sources */,
 				6381EC0F23F35392002C1DD0 /* Frameworks */,
 				6381EC1023F35392002C1DD0 /* Resources */,
+				6CE49E26A7F668F9A4F99204 /* [CP] Embed Pods Frameworks */,
+				3875D27A47F427F417A0F76F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6381EC2D23F35D9D002C1DD0 /* DJIWidget in Resources */,
 				6381EC2223F35397002C1DD0 /* LaunchScreen.storyboard in Resources */,
 				6381EC1F23F35397002C1DD0 /* Assets.xcassets in Resources */,
 				6381EC1D23F35392002C1DD0 /* Main.storyboard in Resources */,
@@ -133,6 +171,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3875D27A47F427F417A0F76F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40707BE97233AA27DD1E7C43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAR-Drone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE49E26A7F668F9A4F99204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAR-Drone/Pods-SAR-Drone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6381EC0E23F35392002C1DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +237,7 @@
 			files = (
 				6381EC1A23F35392002C1DD0 /* ViewController.swift in Sources */,
 				6381EC1623F35392002C1DD0 /* AppDelegate.swift in Sources */,
+				6381EC2A23F35689002C1DD0 /* ProductCommunicationManager.swift in Sources */,
 				6381EC1823F35392002C1DD0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +300,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/DJIWidget/FFmpeg\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +361,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_ROOT}/DJIWidget/FFmpeg\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -282,14 +382,24 @@
 		};
 		6381EC2723F35397002C1DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3345BA6FD2808AFD34A1EE2 /* Pods-SAR-Drone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV78S8QA64;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "SAR-Drone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "UH.SAR-Drone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,14 +410,24 @@
 		};
 		6381EC2823F35397002C1DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF8DBEBB4C36DD0BC0093DB /* Pods-SAR-Drone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV78S8QA64;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "SAR-Drone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "UH.SAR-Drone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
