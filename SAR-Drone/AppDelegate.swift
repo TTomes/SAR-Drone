@@ -1,15 +1,6 @@
-//
-//  AppDelegate.swift
-//  SAR-Drone
-//
-//  Created by Travis Tomer on 2/11/20.
-//  Copyright © 2020 Travis Tomer. All rights reserved.
-//
-
 import UIKit
 
-
-let useBridge = true
+let useBridge = false
 let debugIP = "192.168.1.122"
 
 @UIApplicationMain
