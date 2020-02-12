@@ -9,7 +9,7 @@
 import UIKit
 import DJIUXSDK
 
-class DJIView: DUXDefaultLayoutViewController {
+class ViewController: DUXDefaultLayoutViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent;
