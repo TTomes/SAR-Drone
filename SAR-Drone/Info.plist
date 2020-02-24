@@ -19,13 +19,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>DJISDKAppKey</key>
-	<string>c03748e85417fde953cf0068
-c03748e85417fde953cf0068
-c03748e85417fde953cf0068
-c03748e85417fde953cf0068
-c03748e85417fde953cf0068
-c03748e85417fde953cf0068
-</string>
+	<string>c03748e85417fde953cf0068</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -68,6 +62,10 @@ c03748e85417fde953cf0068
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedExternalAccessoryProtocols</key>
 	<array>
 		<string>com.dji.video</string>

@@ -80,9 +80,9 @@
 		6381EC1423F35392002C1DD0 /* SAR-Drone */ = {
 			isa = PBXGroup;
 			children = (
+				6381EC2923F35689002C1DD0 /* ProductCommunicationManager.swift */,
 				6381EC1523F35392002C1DD0 /* AppDelegate.swift */,
 				6381EC1723F35392002C1DD0 /* SceneDelegate.swift */,
-				6381EC2923F35689002C1DD0 /* ProductCommunicationManager.swift */,
 				6381EC1923F35392002C1DD0 /* ViewController.swift */,
 				6381EC1B23F35392002C1DD0 /* Main.storyboard */,
 				6381EC1E23F35397002C1DD0 /* Assets.xcassets */,
@@ -394,6 +394,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "SAR-Drone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +423,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "SAR-Drone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
